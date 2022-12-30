@@ -2,26 +2,22 @@
 class SearchPage {
     constructor(page) {
       this.page = page;
-    }
+      this.url2 = page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+      this.userName = page.locator("[name='username']"); //Selectors 
+      this.password =  page.locator("[name='password']");
+      this.loginbtn =  page.locator("[type='submit']");
+    } 
     
-// Separate URL with Locators
-    async openFun(){
-    const url2 = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
-    const userName = "[name='username']";
-    const password = "[name='password']";
-    const loginbtn = "[type='submit']";
-    }
-
-    async naviFun() {
-    await this.page.goto(this.url2);
-    }
+    // async naviFun() {
+    // await this.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+    // }
 
 //reference  variables
     async searchFun() { 
-    await this.page.fill(userName);
-    await this.page.fill(password);
-    await this.page.press(loginbtn);
+    await this.userName.fill("Admin");   //textbox 
+    await this.password.fill("admin123");   //textbox
+    await this.loginbtn.click();  //button
     }
   }
 
-  module.exports = new SearchPage();
+  module.exports = {SearchPage};
