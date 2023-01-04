@@ -9,5 +9,5 @@ test('test search', async ({page})=>
 
     const searchPage = new SearchPage(page);
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-    searchPage.searchFun();
+    await searchPage.searchFun();
 });
