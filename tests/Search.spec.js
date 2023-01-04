@@ -15,6 +15,7 @@ class SearchPage {
 //reference  variables
     async searchFun() { 
     await this.userName.fill("Admin");   //textbox 
+    //await expect(page).toHaveTitle();
     await this.password.fill("admin123");   //textbox
     await this.loginbtn.click();  //button
     }
