@@ -1,4 +1,12 @@
 import { test, expect } from '@playwright/test';
+class LoginHRM{
+  constructor(page){
+    this.page=page;
+    this.username = page.locator("'Username'");
+    this.password = page.locator('Password');
+
+  }
+}
 
 test('test', async ({ page }) => {
   const username = 'Admin';
@@ -13,3 +21,4 @@ test('test', async ({ page }) => {
   await page.getByRole('menuitem', { name: 'Logout' }).click();
 });
 
+p)

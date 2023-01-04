@@ -2,7 +2,7 @@
 import { expect, test } from '@playwright/test';
 import { SearchPage } from "./Search.spec";
 
-test('POM test', async ({page})=>
+test('test search', async ({page})=>
 {
     // username = "Admin";
     // password = "admin123";
