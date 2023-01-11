@@ -7,10 +7,6 @@ class SearchPage {
       this.password =  page.locator("[name='password']");
       this.loginbtn =  page.locator("[type='submit']");
     } 
-    
-    // async naviFun() {
-    // await this.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-    // }
 
 //reference  variables
     async searchFun() { 

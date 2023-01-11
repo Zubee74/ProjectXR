@@ -3,7 +3,7 @@ import { expect, Locator, Page } from '@playwright/test';
 class TestPOM {
 constructor(page, url) {
 this.page = Page;
-this.url = url ="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+//this.url = url ="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 this.userName = page.locator("[name='username']");
 this.password = page.locator("[name='password']");
 this.signIn = page.locator("[type='submit']");

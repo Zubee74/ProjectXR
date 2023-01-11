@@ -7,7 +7,8 @@
     "test": "npx playwright test",
     "debug": "npx playwright debug",
     "codegen": "npx playwright codegen",
-    "trace": "npx playwright trace-viewer"
+    "trace": "npx playwright trace-viewer",
+    "report" : "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
