@@ -20,22 +20,21 @@ async infoDetails(){
   await this.firstName.page.fill(this.firstName);
   await this.midName.page.fill(this.midName);
   await this.lastName.page.fill(this.lastName);
-}
-}
-test('test', async ({ page }) => {
-  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-  await page.getByPlaceholder('Username').fill('Admin');
-  await page.getByPlaceholder('Password').click();
-  await page.getByPlaceholder('Password').fill('admin123');
-  await page.getByRole('button', { name: 'Login' }).click();
+// }
+// test('test', async ({ page }) => {
+//   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+//   await page.getByPlaceholder('Username').fill('Admin');
+//   await page.getByPlaceholder('Password').click();
+//   await page.getByPlaceholder('Password').fill('admin123');
+//   await page.getByRole('button', { name: 'Login' }).click();
 
-  await page.getByRole('link', { name: 'My Info' }).click();
-  await page.getByPlaceholder('First Name').click();
-  await page.getByPlaceholder('First Name').fill('Mohammad ');
-  await page.getByPlaceholder('Middle Name').click();
-  await page.getByPlaceholder('Middle Name').fill('Zubair');
-  await page.getByPlaceholder('Last Name').click();
-  await page.getByPlaceholder('Last Name').fill('Tester');
+//   await page.getByRole('link', { name: 'My Info' }).click();
+//   await page.getByPlaceholder('First Name').click();
+//   await page.getByPlaceholder('First Name').fill('Mohammad ');
+//   await page.getByPlaceholder('Middle Name').click();
+//   await page.getByPlaceholder('Middle Name').fill('Zubair');
+//   await page.getByPlaceholder('Last Name').click();
+//   await page.getByPlaceholder('Last Name').fill('Tester');
 //   await page.locator('.oxd-grid-item > .oxd-input-group > div:nth-child(2) > .oxd-input').first().click();
 //   await page.locator('.oxd-grid-item > .oxd-input-group > div:nth-child(2) > .oxd-input').first().fill('Zubee');
 //   await page.locator('div:nth-child(3) > div > div > .oxd-input-group > div:nth-child(2) > .oxd-input').first().click();
@@ -68,3 +67,5 @@ test('test', async ({ page }) => {
 //   await page.getByRole('menuitem', { name: 'Logout' }).click();
 // });
 }
+}
+module.exports = {InfoAdmin};
