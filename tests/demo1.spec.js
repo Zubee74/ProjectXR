@@ -9,3 +9,24 @@ test('logindemo', async ({page})=>
     loginPage1.validLogin();
    
 });
+
+const x = {
+    name : "xyz",
+    show : function(){
+        return this.name;
+    }
+};
+console.log(x);
+const y = {
+    name : "xyz",
+    show(){
+        return this.name;
+    }
+};
+console.log(y);
+
+const user = ["xyz", 25, "Mumbai"];
+const[name1, age1, city1] = user;
+const user2 = ["xyz1", 24, "Pune"];
+const[name, age, city] = user2;
+console.log(user, user2);

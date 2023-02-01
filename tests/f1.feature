@@ -40,6 +40,40 @@ Feature: Login form
     Then : User should not get login successfully
     And : User get a warning message "Please Enter Credentials"
 
+    Scenario: Uer try to login with wrong credenatials
+    When : User enter username 
+    And : User enter password
+    And : User clicked on login button
+    Then : User get a warning message "Credentilas not matched"
+    And : User get opetions for forget password
+
+    Example: Credentilas
+     | username | Admin1 |
+     | password | admin@1234 |
+
+    Scenario: User forget password 
+    When : User try to enter username and password
+    And  : User forget the password 
+    Then : User clicked on forget password
+    Then : Ask for user to enter the old password 
+    And : re-enter the same password and username
+    And : User clicked on change password
+    Then : User get successful password changed
+
+    Scenario: User login with OTP
+    When : User forget username and password
+    And : User clicked on login with OTP
+    And : User asked for enter email or number
+    And : User clicked get OTP
+    Then : User get a otp by his email or number
+    And : User enter OTP and submit
+    Then : User get succefull login to account
+
+    
+
+
+
+    
     
 
 

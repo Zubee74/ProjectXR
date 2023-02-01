@@ -11,6 +11,7 @@ class SearchPage {
 //reference  variables
     async searchFun() { 
     await this.userName.fill("Admin");   //textbox 
+    expect.page.username.equal("Admin");
     //await expect(page).toHaveTitle();
     await this.password.fill("admin123");   //textbox
     await this.loginbtn.click();  //button
@@ -24,3 +25,4 @@ class SearchPage {
   //3.assign refernce variable all the selectors values
   //4.create a new function and call all the reference variables with function of playwrights and JS
   //5.import class file in new file and fatch all the variables and functions through 
+  
