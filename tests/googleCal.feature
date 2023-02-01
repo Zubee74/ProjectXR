@@ -39,4 +39,12 @@ Scenario Outline: Test 3 number addition
 #firstNumber + secondNumber = result
 #result + thiredNumber = result
     
-Scenario Outline: Scenario Outline name
+Scenario Outline: Test entered number datatype
+    Given User google.com Calculator
+    When User entering values to text box
+    And Press enter 
+    Then Check user values datatype
+    And Perform operations on user values
+
+#datatype must be a number
+
