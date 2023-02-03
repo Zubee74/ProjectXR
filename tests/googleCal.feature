@@ -35,7 +35,7 @@ Scenario Outline: Test 3 number addition
 
     Examples:
         | firstNumber | secondNumber | thiredNumber | result |
-        | 2           | 4            | 4           | 10     |
+        | 2           | 4            | 4            | 10     |
 #firstNumber + secondNumber = result
 #result + thiredNumber = result
     
